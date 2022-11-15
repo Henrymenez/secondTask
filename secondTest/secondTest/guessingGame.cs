@@ -10,7 +10,9 @@ namespace secondTest
     {
         public void guessNmuber()
         {
-            string secretNumber = "15";
+             Random rnd = new Random();
+            int rand = rnd.Next(1,1000);
+            string secretNumber = rand.ToString();
             string guess;
             int guessCount = 1;
             int guessLimit = 3;
